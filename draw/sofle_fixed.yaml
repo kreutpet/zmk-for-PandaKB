@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: sofle_choc_pro}
+layout: {zmk_keyboard: sofle}
 layers:
   default:
   - - {t: '`', s: '~'}
