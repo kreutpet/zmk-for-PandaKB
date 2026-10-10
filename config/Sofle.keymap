@@ -164,7 +164,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DE_SEMI>, <&kp DE_COLON>;
-     // ; / :
+
+            // ; / :
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -172,7 +174,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DE_SQT>, <&kp DE_DQT>;
-        // ' / "
+
+            // ' / "
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -180,7 +184,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DE_COMMA>, <&kp DE_LT>;
-       // , / <
+
+            // , / <
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -188,7 +194,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DE_DOT>, <&kp DE_GT>;
-         // . / >
+
+            // . / >
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -196,7 +204,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DE_SLASH>, <&kp DE_QUESTION>;
- // / / ?
+
+            // / / ?
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -244,7 +254,9 @@
                         &gui_lt GUI LGUI  &kp LALT   &kp LCTRL  &mo LOWER  &kp RET       &kp SPACE   &mo RAISE  &kp RCTRL  &kp RALT      &gui_lt GUI RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -265,7 +277,9 @@
                          &trans        &trans       &trans       &trans        &trans    &trans  &trans       &trans       &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
@@ -286,7 +300,9 @@
                           &trans        &trans        &trans        &trans          &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
