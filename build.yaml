@@ -17,6 +17,7 @@ include:
     shield: Sofle_R Nice_view_config nice_view_custom
     artifact-name: Sofle_right_nice_view
 
+
 #Sofle with dongle 带dongle的Sofle
   # dongle with LCD display 带LCD显示的dongle
   - board: nice_nano_v2
@@ -42,7 +43,6 @@ include:
   - board: nice_nano_v2
     shield: Sofle_dongle_right Nice_view_config nice_view_custom
     artifact-name: Sofle_peripheral_right_nice_view
-
-    
+ 
   - board: nice_nano_v2
     shield: settings_reset
